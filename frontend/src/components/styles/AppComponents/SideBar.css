@@ -1,0 +1,107 @@
+.sidebar {
+  background-color: var(--background-color);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: var(--text-color);
+}
+
+/* Desktop: Fixed sidebar on left */
+@media (min-width: 769px) {
+  .sidebar {
+    height: 100vh;
+    width: 250px;
+  }
+
+  .sidebar.closed {
+    width: 60px;
+  }
+
+  .sidebar.closed .menu-text {
+    display: none;
+  }
+}
+
+/* Mobile: Dropdown from top */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .sidebar.open {
+    height: auto;
+    max-height: 100vh;
+  }
+
+  .sidebar.closed {
+    height: 0;
+  }
+}
+
+.toggle-btn {
+  width: 100%;
+  padding: 10px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toggle-btn:hover {
+  background: var(--button-text);
+  color: var(--button-bg);
+}
+
+/* Mobile: Move toggle button to content area */
+@media (max-width: 768px) {
+  .toggle-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    z-index: 1001;
+  }
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px 20px;
+}
+
+.menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu a.active {
+  background-color: var(--button-bg);
+  border-left: 4px solid var(--border-color);
+  color: var(--button-text);
+}
+
+.menu a:hover:not(.active) {
+  background-color: var(--button-text);
+  color: var(--button-bg);
+}
+
+.menu-icon {
+  font-size: 20px;
+  min-width: 20px;
+}
+
+.menu-text {
+  white-space: nowrap;
+}

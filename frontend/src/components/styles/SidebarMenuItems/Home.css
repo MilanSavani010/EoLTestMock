@@ -1,0 +1,36 @@
+.home-content {
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.home-content h1 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 15px;
+    border-radius: 0; /* Remove border radius on mobile */
+  }
+  
+  .home-content h1 {
+    font-size: 24px;
+  }
+  
+  .home-content p {
+    font-size: 14px;
+  }
+}
