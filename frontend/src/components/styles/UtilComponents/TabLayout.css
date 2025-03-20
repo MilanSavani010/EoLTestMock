@@ -1,0 +1,80 @@
+
+  /* General Styling */
+  .tab-layout {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 0px;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    overflow: hidden;
+  }
+  
+  .tab-layout.horizontal {
+    flex-direction: column; /* Tabs at the top */
+  }
+  
+  .tab-layout.vertical {
+    flex-direction: row; /* Tabs on the left */
+  }
+  
+  .tab-header {
+    display: flex;
+    background-color: var(--tab-inactive-bg);
+    border-right: 1px solid var(--border-color);
+  }
+  
+  .tab-header.horizontal {
+    flex-direction: row;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .tab-header.vertical {
+    flex-direction: column;
+    width: 150px; /* Fixed width for vertical tabs */
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--tab-inactive-bg);
+    color: var(--tab-inactive-text);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0px;
+    transition: all 0.2s;
+  }
+  
+  .tab-button.active {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    font-weight: bold;
+    border-bottom: 2px solid var(--border-color); /* For horizontal */
+  }
+  
+  .tab-button.active.tab-header.vertical {
+    border-right: 2px solid var(--border-color); /* For vertical */
+  }
+  
+  .tab-button:hover {
+    background-color: var(--tab-hover-bg);
+    color: var(--tab-hover-text);
+  }
+  
+  /* Indicator for horizontal only */
+  .tab-indicator {
+    height: 3px;
+    background-color: var(--border-color);
+    transition: transform 0.3s ease;
+  }
+  
+  .tab-content {
+    flex: 1;
+    padding: 20px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  

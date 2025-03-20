@@ -1,0 +1,63 @@
+
+  .list-container {
+    background-color: var(--list-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--list-item-bg);
+    color: var(--list-item-text);
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .list-item:hover {
+    background-color: var(--list-item-hover-bg);
+    color: var(--list-item-hover-text);
+  }
+  
+  .list-item.active {
+    background-color: var(--list-item-active-bg);
+    color: var(--list-item-active-text);
+    font-weight: bold;
+  }
+  
+  .list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .list-item-content {
+    flex: 1;
+  }
+  
+  .delete-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: var(--list-item-hover-bg);
+    color: var(--list-item-hover-text);
+  }
+  

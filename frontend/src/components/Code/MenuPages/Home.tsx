@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/SidebarMenuItems/Home.css'
+import '../../styles/Menupages/Home.css'
 const Home: React.FC = () => {
   return (
     <div className="home-content">

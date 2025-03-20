@@ -3,11 +3,9 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Code/AppComponents/SideBar';
 import MainContent from './components/Code/AppComponents/MainContent';
-import Home from './components/Code/SideBarMenuItems/Home';
-import NotFound from './components/Code/SideBarMenuItems/NotFound';
-import Profile from './components/Code/SideBarMenuItems/Profile';
-import Settings from './components/Code/SideBarMenuItems/Settings';
-import Matrix from './components/Code/SideBarMenuItems/Matrix';
+import NotFound from './components/Code/MenuPages/NotFound';
+import Profile from './components/Code/MenuPages/Profile';
+import Matrix from './components/Code/MenuPages/Matrix';
 import UnderConstruction from './components/Code/UtilComponents/UnderConstruction';
 
 interface MenuItem {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../styles/SidebarMenuItems/Matrix.css'
+import '../../styles/MenuPages/Matrix.css'
 import { deleteMatrix, fetchMatrices } from '../services/matrix/api';
 import { Matrix } from "../Models/interfaces";
 

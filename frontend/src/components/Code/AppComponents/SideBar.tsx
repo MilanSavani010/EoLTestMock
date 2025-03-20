@@ -30,7 +30,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle, menuItems }) => {
               <NavLink
                 to={item.path}
                 className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={onToggle} // Close dropdown on item click
               >
                 {item.icon && <span className="menu-icon">{item.icon}</span>}
                 <span className="menu-text">{item.label}</span>

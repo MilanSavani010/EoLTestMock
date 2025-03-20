@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import '../../styles/SidebarMenuItems/Profile.css'
 import { deleteProfile, fetchProfiles } from '../services/profile/api';
 import { Profile } from "../Models/interfaces";
+import ProfileList from '../Pages/Lists/ProfileList';
 
 const ProfileComponent: React.FC = () => {
   const [profiles, setProfiles] = useState<Profile[]>([]);
@@ -42,7 +42,7 @@ const ProfileComponent: React.FC = () => {
   return (
       <div className="profile-tab-container">
         
-          
+          <ProfileList/>
       </div>
   );
 };

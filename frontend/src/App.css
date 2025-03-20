@@ -1,30 +1,50 @@
 /* Default to day mode (white background, black text) */
 :root, [data-theme="day"] {
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --border-color: #000000;
-  --button-bg: #000000;
-  --button-text: #ffffff;
-  --shadow-color: rgba(0, 0, 0, 0.1);
+  --background-color: #ffffff;         /* General background (lists, tabs, etc.) */
+  --text-color: #000000;              /* General text (list items, tab labels) */
+  --border-color: #000000;            /* Borders (list item borders, tab underlines) */
+  --button-bg: #000000;               /* Button/list item active background */
+  --button-text: #ffffff;             /* Button/list item active text */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Shadows (list containers, tabs) */
+  --tab-inactive-bg: #ffffff;         /* Inactive tab background */
+  --tab-inactive-text: #000000;       /* Inactive tab text */
+  --tab-hover-bg: #ffffff;            /* Tab hover background */
+  --tab-hover-text: #000000;          /* Tab hover text */
+  --list-bg: #ffffff;                 /* List container background */
+  --list-item-bg: #ffffff;            /* Individual list item background */
+  --list-item-text: #000000;          /* List item text */
+  --list-item-hover-bg: #ffffff;      /* List item hover background */
+  --list-item-hover-text: #000000;    /* List item hover text */
+  --list-item-active-bg: #000000;     /* List item active/selected background */
+  --list-item-active-text: #ffffff;   /* List item active/selected text */
 }
 
 /* Night mode (black background, white text) */
 [data-theme="night"] {
-  --background-color: #000000;
-  --text-color: #ffffff;
-  --border-color: #ffffff;
-  --button-bg: #ffffff;
-  --button-text: #000000;
-  --shadow-color: rgba(255, 255, 255, 0.1);
+  --background-color: #000000;         /* General background (lists, tabs, etc.) */
+  --text-color: #ffffff;              /* General text (list items, tab labels) */
+  --border-color: #ffffff;            /* Borders (list item borders, tab underlines) */
+  --button-bg: #ffffff;               /* Button/list item active background */
+  --button-text: #000000;             /* Button/list item active text */
+  --shadow-color: rgba(255, 255, 255, 0.1); /* Shadows (list containers, tabs) */
+  --tab-inactive-bg: #000000;         /* Inactive tab background */
+  --tab-inactive-text: #ffffff;       /* Inactive tab text */
+  --tab-hover-bg: #000000;            /* Tab hover background */
+  --tab-hover-text: #ffffff;          /* Tab hover text */
+  --list-bg: #000000;                 /* List container background */
+  --list-item-bg: #000000;            /* Individual list item background */
+  --list-item-text: #ffffff;          /* List item text */
+  --list-item-hover-bg: #000000;      /* List item hover background */
+  --list-item-hover-text: #ffffff;    /* List item hover text */
+  --list-item-active-bg: #ffffff;     /* List item active/selected background */
+  --list-item-active-text: #000000;   /* List item active/selected text */
 }
-
 
 .app {
   display: flex;
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevents scrolling on app container */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   background-color: var(--background-color);
   color: var(--text-color);
-
 }

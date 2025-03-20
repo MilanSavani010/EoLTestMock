@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/SidebarMenuItems/NotFound.css'
+import '../../styles/MenuPages/NotFound.css'
 
 const NotFound: React.FC = () => {
   return (
