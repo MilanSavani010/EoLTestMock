@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle, menuItems }) => {
   return (
     <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       <button className="toggle-btn" onClick={onToggle}>
-        {isOpen ? '✕' : '☰'}
+        {isOpen ? '〱' : '☰'}
       </button>
       <nav className="menu">
         <ul>

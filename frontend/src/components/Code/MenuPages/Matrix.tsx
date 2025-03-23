@@ -41,8 +41,6 @@ const MatrixComponent: React.FC = () => {
 
   return (
       <div className="matrix-tab-container">
-        
-          
       </div>
   );
 };

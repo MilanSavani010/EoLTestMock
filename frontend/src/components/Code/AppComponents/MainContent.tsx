@@ -1,5 +1,4 @@
-import React, { Children } from "react";
-import { Outlet } from "react-router-dom";
+import React  from "react";
 import '../../styles/AppComponents/MainContent.css'
 
 interface MainContentProps
@@ -13,7 +12,6 @@ const MainContent: React.FC<MainContentProps> = ({ sidebarOpen,children }) => {
       <main className={`main-content ${sidebarOpen ? 'shifted' : ''}`}>
         <div className="content-container">
             {children}
-          <Outlet />
         </div>
       </main>
     );

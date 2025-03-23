@@ -7,6 +7,7 @@ import NotFound from './components/Code/MenuPages/NotFound';
 import Profile from './components/Code/MenuPages/Profile';
 import Matrix from './components/Code/MenuPages/Matrix';
 import UnderConstruction from './components/Code/UtilComponents/UnderConstruction';
+import EoLTest from './components/Code/MenuPages/EolTest/EolTest';
 
 interface MenuItem {
   id: number;
@@ -24,7 +25,9 @@ function App() {
     { id: 1, label: 'Home', path: '/', icon: '🏠' },
     { id: 2, label: 'Profile', path: '/profile', icon: '👤' },
     { id: 3, label: 'Matrix', path: '/matrix', icon: '📊' },
-    { id: 4, label: 'Settings', path: '/settings', icon: '⚙️' },
+    { id: 4, label: 'EoLTest', path: '/eoltest', icon: '💉' },
+    { id: 5, label: 'Settings', path: '/settings', icon: '⚙️' },
+  
   ];
 
 
@@ -45,9 +48,9 @@ function App() {
             <Routes>
             <Route path="/" element={<UnderConstruction message="Home Page Under Construction" />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/matrix" element={<UnderConstruction message="Matrix Page Under Construction" />} />
+            <Route path="/eoltest" element={<EoLTest/>} />
             <Route path="/settings" element={<UnderConstruction message="Setting Page Under Construction" />} />
-            <Route path="/matrix" element={<Matrix />} />
-
             <Route path="*" element={<NotFound />} />        
             </Routes>
         </MainContent>

@@ -41,7 +41,6 @@ const ProfileComponent: React.FC = () => {
 
   return (
       <div className="profile-tab-container">
-        
           <ProfileList/>
       </div>
   );
