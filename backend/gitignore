@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .vs/*
-
+obj/*
+bin/*
 *.vsidx
