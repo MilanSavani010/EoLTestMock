@@ -6,6 +6,11 @@ public class EolApplicationService : IEoLApplicationService
         throw new NotImplementedException();
     }
 
+    public Task<bool> Evaluate()
+    {
+        throw new NotImplementedException();
+    }
+
     public Task<BmsData?> GetLatestBmsData()
     {
         throw new NotImplementedException();

@@ -45,5 +45,11 @@ public static class EoLEndPoints
         {
             eolService.Stop();
         });
+
+        app.MapPost("/init", (IEoLApplicationService eolService) =>
+        {
+            eolService.Initialize();
+        });
     }
+
 }

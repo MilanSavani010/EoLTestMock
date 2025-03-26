@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+    <PackageReference Include="DbcParserLib" Version="1.7.0" />
+    <PackageReference Include="Peak.PCANBasic.NET" Version="4.10.1.968" />
+  </ItemGroup>
+
 </Project>

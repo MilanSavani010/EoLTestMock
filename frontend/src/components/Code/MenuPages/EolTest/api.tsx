@@ -20,3 +20,12 @@ export const Stop = async (): Promise<void> => {
     }
   };
   
+  export const Init = async (): Promise<void> => {
+    const response = await fetch(`${API_URL}/init`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+    });
+    if (!response.ok) {
+    }
+  };
+  

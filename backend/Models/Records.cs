@@ -1,6 +1,6 @@
 public record BrickData(
     bool LoadActive,
-    double ChargeActive,
+    bool ChargeActive,
     bool BalancingActive,
     double Voltage,
     double MaxCellV,

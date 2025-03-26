@@ -3,8 +3,9 @@ import BrickControls from './BrickControls';
 import BrickInfo from './BrickInfo';
 import ValuePanel from './ValuePanel';
 import PowerSourceSink from './PowerSourceSink';
-import { Start,Stop } from './api';
+import { Start,Stop ,Init} from './api';
 import './EolTest.css';
+import DeltaCellVChart from './DeltaVoltageGraph';
 
 
 // Define types for Brick and Power data
@@ -137,6 +138,7 @@ const EolTest: React.FC = () => {
       powerDischarge: 0,
       powerCharge: 0,
     });
+    Init();
   };
 
   const handleStart = () => {
@@ -197,6 +199,7 @@ const EolTest: React.FC = () => {
         />
         <ValuePanel label="BI_DELTA_CELL_V" value={brickData.deltaCellV}  unit='mV' />
       </div>
+      <DeltaCellVChart deltaCellV={brickData.deltaCellV} />
       <div className="cell-voltages">
         {brickData.cells.map((cell, index) => (
           <ValuePanel

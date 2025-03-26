@@ -1,3 +1,4 @@
+using CommunityToolkit.Mvvm.Messaging;
 using FileSystemBackend.Endpoints;
 using FileSystemBackend.Services;
 
@@ -26,6 +27,9 @@ public class Startup
         services.AddSingleton<IProfileStorageService, ProfileStorageService>();
         services.AddSingleton<IMatrixStorageService, MatrixStorageService>();
         services.AddSingleton<IEoLApplicationService, MockEoLApplicationService>();
+        services.AddSingleton<ICanCommunicationService, MockCanCommunicationService>();
+        services.AddSingleton<IMessenger, WeakReferenceMessenger>();
+        
     }
 
     // Configure the middleware and endpoints
