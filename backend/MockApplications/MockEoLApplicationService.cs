@@ -25,8 +25,6 @@ public class MockEoLApplicationService(ICanCommunicationService _canService) : I
  
     public async Task<BmsData?> GetLatestBmsData()
     {
-   
-
         var brickData = new BrickData(
             LoadActive: _batteryModel.LoadActive, 
             ChargeActive: _batteryModel.ChargeActive,
@@ -279,9 +277,6 @@ public class MockEoLApplicationService(ICanCommunicationService _canService) : I
             // Simulate charging current decreasing over time
             double current = Math.Max((1 - chargeLevel) * 10, 0.5); // High at low charge, decreasing over time
 
-
-
-
             _batteryModel.LoadActive = false;
             _batteryModel.ChargeActive = chargeLevel < 1.0;
             _batteryModel.BalancingActive = deltaCellV > 0.5;
@@ -294,7 +289,6 @@ public class MockEoLApplicationService(ICanCommunicationService _canService) : I
             _batteryModel.Temperature = 25 + (chargeLevel * 10) + random.NextDouble() * 2;
             _batteryModel.DeltaCellV = deltaCellV;
             _batteryModel.CellVoltages = cells;
-
             _psbModel.Active = chargeLevel < 1.0;
             _psbModel.Voltage = totalVoltage;
             _psbModel.CurrentCharge = current;
@@ -306,4 +300,6 @@ public class MockEoLApplicationService(ICanCommunicationService _canService) : I
         }
         
      }
+
+
 }
