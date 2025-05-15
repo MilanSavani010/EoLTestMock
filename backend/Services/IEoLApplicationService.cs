@@ -1,15 +1,3 @@
-
-public enum TestState
-{
-    RUNNING,
-    IDLE
-}
-
-public enum EoLAppState
-{
-    ERROR,
-    OK
-}
 public interface IEoLApplicationService
 {
     void Start();
@@ -18,4 +6,6 @@ public interface IEoLApplicationService
 
     bool CheckIfActive();
     Task<BmsData?> GetLatestBmsData();
+    
+    Task<bool> Evaluate();
 }
