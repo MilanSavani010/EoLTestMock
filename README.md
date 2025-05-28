@@ -32,7 +32,7 @@ A full-stack solution for End-of-Line (EoL) testing and CAN message simulation, 
 ### 1. Clone the repository
 
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/MilanSavani010/EoLTestMock.git
 cd EoLTestMock
 ```
 
