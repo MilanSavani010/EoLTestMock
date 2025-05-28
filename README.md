@@ -2,6 +2,8 @@
 
 A full-stack solution for End-of-Line (EoL) testing and CAN message simulation, featuring a .NET 8 backend and a modern React frontend powered by Vite.
 
+**⚠️ This project is under development. It is intended as a mock/simulated version for prototyping, testing, and demonstration purposes. Features, APIs, and structure may change.**
+
 ---
 
 ## Features
