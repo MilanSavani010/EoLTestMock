@@ -79,8 +79,6 @@ export default defineConfig({
 EoLTestMock/
 │
 ├── backend/         # ASP.NET Core backend
-│   ├── Models/      # Data models (Records.cs, etc.)
-│   ├── Controllers/ # API controllers
 │   └── ...          
 │
 ├── frontend/        # React + Vite frontend
@@ -97,7 +95,6 @@ EoLTestMock/
 
 - Access the frontend in your browser (default: [http://localhost:5173](http://localhost:5173) or as configured).
 - The frontend communicates with the backend API for CAN message operations and test data.
-- Backend API documentation can be found in `backend/Controllers/` or via Swagger if enabled.
 
 ---
 
